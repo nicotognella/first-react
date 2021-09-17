@@ -1,10 +1,10 @@
+import React from 'react';
+import GenresInDb from './GenresInDb';
+import LastMovie from './LastMovie';
+import SideBar from './SideBar';
+import NavBar from '../TopBar';
+import ContentRowTop from './ContentRowTop';
 
-import GenresInDb from '../GenresInDb';
-import LastMovie from '../LastMovie';
-import SideBar from '../SideBar';
-import ContentRow from '../ContentRow';
-import TopBar from '../TopBar';
-import '../../assets/css/movie.css'
 
 
 function Main () {
@@ -12,12 +12,12 @@ function Main () {
     <div className='movie' >
         <SideBar />
         <div>
-            <TopBar />
-            <ContentRow/>
+            <NavBar />
+            <ContentRowTop title='App dashboard'/>
             <div className= 'lastGenres'>
                 <LastMovie/>
                 <GenresInDb/>
-             </div>
+            </div>
         </div>
     </div>
     )
